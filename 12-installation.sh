@@ -6,7 +6,7 @@ if [ $USERID -ne 0 ]; then
    exit 1
 fi
 
-VALIDATE() {
+VALIDATE(){
     if [ $1 -ne 0 ]; then
       echo "ERROR:: Installing $2 is Failure"
     exit 1
@@ -14,10 +14,10 @@ VALIDATE() {
 }
 
 dnf install mysql -y
-validate $? "MYSQL"
+VALIDATE $? "MYSQL"
 
 dnf install nginx -y
-validate $? "Nginx"
+VALIDATE $? "Nginx"
 
 dnf install python3 -y
-validate $? "Python3"
+VALIDATE $? "python3"
