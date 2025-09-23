@@ -13,7 +13,7 @@ VALIDATE(){
   fi
 } 
 
-dnf instal mysql -y
+dnf install mysql -y
 VALIDATE $? "mysql"
 
 dnf install nginx -y
