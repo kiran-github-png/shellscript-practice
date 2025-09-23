@@ -27,7 +27,6 @@ else
   echo "MYSQL already exit ... $Y skipping $N"
   fi
 
-  }
 dnf list install nginx
  if [ $? -ne 0 ]; then
 dnf install nginx -y
