@@ -32,7 +32,7 @@ dnf list install nginx
 dnf install nginx -y
 VALIDATE $? "nginx"
 else  
-  echo-e "MYSQL already exit ... $Y skipping $N"
+  echo -e "MYSQL already exit ... $Y skipping $N"
   fi
 
 dnf list install python3
