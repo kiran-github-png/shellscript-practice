@@ -24,7 +24,7 @@ dnf list install mysql
 dnf install mysql -y
 VALIDATE $? "mysql"
 else  
-  echo "MYSQL already exit ... $Y skipping $N"
+  echo -e "MYSQL already exit ... $Y skipping $N"
   fi
 
 dnf list install nginx
@@ -32,7 +32,7 @@ dnf list install nginx
 dnf install nginx -y
 VALIDATE $? "nginx"
 else  
-  echo "MYSQL already exit ... $Y skipping $N"
+  echo-e "MYSQL already exit ... $Y skipping $N"
   fi
 
 dnf list install python3
@@ -40,5 +40,5 @@ dnf list install python3
 dnf install python3 -y
 VALIDATE $? "python3"
 else  
-  echo "MYSQL already exit ... $Y skipping $N"
+  echo -e "MYSQL already exit ... $Y skipping $N"
   fi
