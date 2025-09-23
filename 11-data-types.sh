@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 echo "Please Enter The Number"
-read NUMNER
+read NUMBER
 
 if [ $(($NUMBER % 2)) -eq 0 ]; then
     echo "Given Number $NUMBER is EVEN"
