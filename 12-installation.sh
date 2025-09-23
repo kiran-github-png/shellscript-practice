@@ -1,16 +1,12 @@
 #!/bin/bash
-
-USERID=$(id -u)
-if [ $USERID -ne 0 ]; then
+USERID=(id -u)
+if ( $USERID -ne 0 ); then
   echo "ERROR:: PLEASE RUN THIS SCRIPT WITH ROOT PRIVELAGE"
-  exit 1
 fi
 
-dnf install mysql -y
-
+dnf install mysqld
 if [ $? -ne 0 ]; then
-  echo "Installing MYSQL is failure"
-  exit 1
+  echo "ERROR:: Installing mysql is failure"
 else
-  echo "Installing MYSQL is SUCCESS"
+  echo "Installing mysql is SUCCESS"
 fi
