@@ -35,7 +35,6 @@ else
   echo "MYSQL already exit ... $Y skipping $N"
   fi
 
-  }
 dnf list install python3
  if [ $? -ne 0 ]; then
 dnf install python3 -y
