@@ -1,4 +1,4 @@
 #!/bin/bash
 
-PERSON=RAM
+PERSON=KIRAN
 echo "HELLO $PERSON"
